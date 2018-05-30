@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <title>*.Presta-Casa.*</title> -->
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style1.css">
+    <script src="boostrap/js/bootstrap.js"></script>
+    <script src="boostrap/js/jquery.min.js">  </script>
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script src="boostrap/js/pooper.min.js"></script>
+    <script src="boostrap/js/tether.min.js"></script>
+    <link href="boostrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Letras cursivas -->
+    <style>/**/
+            @import url(
+                'https://fonts.googleapis.com/css?family=Bangers|Bree+Serif|Chewy|Cookie|Lobster+Two|Oleo+Script|Open+Sans|Pacifico'
+                );
+        </style>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Estilos en Css -->
+    <!-- <style>
+      .slider{
+        background: url("images/bg-3.png");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+      }
+    </style> -->
+    <title>:.PrestaCasa.:</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBe2aIylFKYP7Y0yTcvRmCCe8IPwYLN-DU",
+        authDomain: "prestacasa-6896b.firebaseapp.com",
+        databaseURL: "https://prestacasa-6896b.firebaseio.com",
+        projectId: "prestacasa-6896b",
+        storageBucket: "prestacasa-6896b.appspot.com",
+        messagingSenderId: "137327123342"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body style="background-color: rgb(194, 195, 197)e;" >
+        <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown>
+
+                <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
+          
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+          
+                  <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01" >
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch;color:black" href="#">Inicio</a>
+          
+          
+                        <div class="nav-item dropdown" style="float: left;">
+                            <a style="color:black; font-size: 2.5ch" class="nav-link dropdown-toggle mr-md-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Nosotros
+                            </a>
+                            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Mision</a>
+                              <a class="dropdown-item" href="#">Vision</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Valores</a>
+          
+                            </div>
+                          </div>
+          
+          
+          
+                    </div>
+          
+                </div>
+          
+          
+          
+            </nav> <br> <br> <br> <br> <br>
+            <!-- Sección Slider -->
+    <div class="container-fluid slider  text-white  d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center">
+             <div class="col-md-13">
+                 <div class="  btn-toolbar btn-group-lg  ">
+                      <a type="button" class="btn btn-danger  mr-md-4 " href="clientes.html">Clientes</a>
+                      <br>
+      
+                      <a type="button" class="btn btn-danger mr-md-4 " href="Prestamos.html">Prestamos</a>
+      
+                      <br>
+                      <a type="button" class="btn btn-danger  mr-md-4" href="PagosYCobros.html">Pagos/Cobros</a>
+                  </div>
+             </div>
+            </div>
+            <form action="" class="form-inline flex-column flex-sm-row">
+      
+      
+            </form>
+          </div>
+
+
+        <!-- <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown>
+      
+                <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
+        
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                  <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01" >
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch;color:black" href="#">Inicio</a>
+                        
+                        
+                        <div class="nav-item dropdown" style="float: left;">
+                            <a style="color:black; font-size: 2.5ch" class="nav-link dropdown-toggle mr-md-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Nosotros
+                            </a>
+                            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Mision</a>
+                              <a class="dropdown-item" href="#">Vision</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Valores</a>
+                              
+                            </div>           
+                          </div>
+                        <a class="nav-item nav-link mr-md-3"  style="font-size: 2.5ch; color:black" href="#">Registrarse</a>
+                        <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch; color:black" href="#">Ingresar</a>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </nav>
+        <!-- <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown> -->
+      
+                <!-- <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
+        
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                  <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01" >
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch;color:black" href="#">Inicio</a>
+                        
+                        
+                        <div class="nav-item dropdown" style="float: left;">
+                            <a style="color:black; font-size: 2.5ch" class="nav-link dropdown-toggle mr-md-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Nosotros
+                            </a>
+                            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Mision</a>
+                              <a class="dropdown-item" href="#">Vision</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Valores</a>
+                              
+                            </div>           
+                          </div>
+                        <a class="nav-item nav-link mr-md-3"  style="font-size: 2.5ch; color:black" href="#">Registrarse</a>
+                        <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch; color:black" href="#">Ingresar</a>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </nav> --> 
+
+    <!-- <div class="container-fuid bg-inverse fixed-top">
+    <nav class="navbar navbar-toggler-sm navbar-inverse bg-inverse container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="img/notes.png" width="60" height="60" class="d-inline-block align-top" alt=""> PrestaCasa
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto text-center">
+          <a class="nav-item nav-link mr-md-4 active" href="login.html">Inicio</a>
+        </div>
+      </div>
+    </nav>
+  </div>-->
+    <!-- <div class="container-fluid bg-inverse  fixed-top">
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="img/notes.png" width="60" height="60" class="d-inline-block align-top" alt=""> PrestaCasa
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto text-center">
+                    <a class="nav-item nav-link mr-md-4  active" href="Principal.html">Inicio</a>
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nosotros</button>
+                        <div class="dropdown-menu btn-info" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Misión </a>
+                            <a class="dropdown-item" href="#">Visión</a>
+                            <a class="dropdown-item" href="#">Valores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div> -->
+   
+    <div class="container">
+            <hr class="badge-danger" style="height: 8px">
+      
+            <h1>Clientes</h1>
+              <div class="row">
+                <!-- Sección de noticias -->
+                <div class="col-12 col-lg-9 mb-5">
+                  <!-- Artículos -->
+                  <div class="row mb-5">
+                    <div class="col-3">
+                      <img class="img-fluid" src="images/p6.jpg" height="500" width="500" alt="">
+                      <p class="lead text-muted text-center">.</p>
+                    </div>
+       
+                <div class="col-md-9">
+                        <div class="form-group ">
+                                <label class="text-black" for="name">IdCliente:</label>
+                                <input runat="server" type="number" class="form-control" id="IdCliente" MaxLength="30" />
+                              </div>
+                            
+                                 <div class="form-group">
+                                <label class="text-black" for="name">Nombre:</label>
+                                <input runat="server" type="text" class="form-control" id="Nombre" MaxLength="50"/>
+                              </div>                             
+                                        <div class="form-group">
+                                <label class="text-black" for="name">Primer Apellido:</label>
+                                <input runat="server" type="text" class="form-control" id="Primer_Apellido" MaxLength="10"/>
+                              </div>
+                                        <div class="form-group " item-width="500">
+                                <label class="text-black" for="name">Segundo Apellido:</label>
+                                <input runat="server" type="text" class="form-control" id="Segundo_Apellido" MaxLength="20" />
+                              </div>
+                                        <div class="form-group">
+                                <label class="text-black" for="name">Domicilio:</label>
+                                <input runat="server" type="text" class="form-control" id="Domicilio" MaxLength="50"/>
+                              </div>                    
+                                     <div class="form-group">
+                                <label  class="text-black"for="email">Email:</label>
+                                <input runat="server" type="email" class="form-control" id="Email" MaxLength="50"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="text-black" for="pwd">Telefono:</label>
+                                <input runat="server" type="tel" class="form-control" id="Telefono" MaxLength="15" placeholder="Maximo 15 digitos"/>
+                              </div>
+                             <button id="btnGuardarCliente" class="btn btn-group-lg btn-success  mr-md-4 " >Guardar</button>
+                             <button class="btn btn-group-lg btn-warning   mr-md-4  ">Modificar</button>
+       
+                             <button class="btn btn-group-lg btn-danger   mr-md-4 ">Eliminar</button>
+             </div>
+             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header alert-danger">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                <h4 class="modal-title" id="myModalLabel">Error</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                ¡¡¡Ya existe un Cliente con el mismo Id.!!!
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+         
+
+
+        
+    
+<!-- Footer -->
+<br>
+<div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="wow fadeInUp">Nuestro Contacto</h4>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> Domicilio de la empresa</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@PrestaCasa.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> telefono de la empresa</p>
+                    <p><i class="fa fa-globe" aria-hidden="true"></i> pagina de la empresa</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Aprende Más</h4>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Nosotros</p>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacidad</p>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Terminos & Condiciones</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+      <!-- Fin Footer -->
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+<script src="app.js"></script> 
+</html>

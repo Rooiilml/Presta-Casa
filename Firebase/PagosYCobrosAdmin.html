@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <script src="boostrap/js/bootstrap.js"></script>
+    <script src="boostrap/js/jquery.min.js">  </script>
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script src="boostrap/js/pooper.min.js"></script>
+    <script src="boostrap/js/tether.min.js"></script>
+    <link href="boostrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- <style>
+            .slider{
+              background: url("img/p4.jpg");
+              background-size: cover;
+              background-position: center6
+              height: 400px;
+            }
+          </style> -->
+    <title>:.PrestaCasa.:</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBe2aIylFKYP7Y0yTcvRmCCe8IPwYLN-DU",
+        authDomain: "prestacasa-6896b.firebaseapp.com",
+        databaseURL: "https://prestacasa-6896b.firebaseio.com",
+        projectId: "prestacasa-6896b",
+        storageBucket: "prestacasa-6896b.appspot.com",
+        messagingSenderId: "137327123342"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body style="background-color: cornflowerblue;" >
+
+    <!-- <div class="container-fuid bg-inverse fixed-top">
+    <nav class="navbar navbar-toggler-sm navbar-inverse bg-inverse container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="img/notes.png" width="60" height="60" class="d-inline-block align-top" alt=""> PrestaCasa
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto text-center">
+          <a class="nav-item nav-link mr-md-4 active" href="login.html">Inicio</a>
+        </div>
+      </div>
+    </nav>
+  </div>-->
+    <div class="container-fluid bg-inverse  fixed-top">
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="img/notes.png" width="60" height="60" class="d-inline-block align-top" alt=""> PrestaCasa
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto text-center">
+                    <a class="nav-item nav-link mr-md-4  active" href="Principal.html">Inicio</a>
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nosotros</button>
+                        <div class="dropdown-menu btn-info" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Misión </a>
+                            <a class="dropdown-item" href="#">Visión</a>
+                            <a class="dropdown-item" href="#">Valores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+   <br>
+   <br>
+<br>
+<br>
+    <div class="container-fluid slider text-black d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="text-black">PAGOS Y COBROS</h1>
+        </div>
+    </div>
+    <hr>
+    <br>
+     <!--todo lo de los botones y caroucel-->
+ 
+     <div class="text align-content-center text align-items-center ">
+        <div class="row">
+        <div class="col-sm-2 align-content-center">
+            <div class=" btn-group-vertical btn-group-lg">
+                <a type="button" class="btn btn-success  " href="clientesAdmin.html">Clientes</a>
+                <br>
+                <a type="button" class="btn btn-success " href="PrestamosAdmin.html">Prestamos</a>
+                <br>
+                <a type="button" class="btn btn-success " href="EmpleadosAdmin.html">Empleados</a>
+                <br>
+                <a type="button" class="btn btn-success " href="PagosYCobrosAdmin.html">Pagos/Cobros</a>
+                <br>
+                <a type="button" class="btn btn-success " href="">Bitacora de Pagos Clientes</a>
+                <br>
+                <a type="button" class="btn btn-success " href="">Bitacora de Cobros del Promotor</a>
+                <br>
+                <a type="button" class="btn btn-success " href="">Bitacora de Prestamos Acomodados</a>
+                <br>
+                <a type="button" class="btn btn-success " href="">Bitacora de Movimientos Realizados</a>
+            </div>
+        </div>
+        
+        <form class="form-horizontal" style="margin:0 auto">
+                <div class="form-group ">
+                        <label class="text-black" for="name">IdPago:</label>
+                        <input runat="server" type="number" class="form-control" style="width:350px;" id="IdPago" MaxLength="30" />
+                      </div>
+                    
+                         <div class="form-group">
+                        <label class="text-black" for="name">IdCliente:</label>
+                        <input runat="server" type="text" class="form-control"style="width:350px;" id="IdCliente" MaxLength="20"/>
+                      </div>                             
+                                <div class="form-group">
+                        <label class="text-black" for="name">IdPrestamo:</label>
+                        <input runat="server" type="text" class="form-control"style="width:350px;" id="IdPrestamo" MaxLength="20"/>
+                      </div>
+                                <div class="form-group " item-width="500">
+                        <label class="text-black" for="name">IdEmpleado:</label>
+                        <input runat="server" type="text" class="form-control"style="width:350px;" id="IdEmpleado" MaxLength="20" />
+                      </div>
+                                <div class="form-group">
+                        <label class="text-black" for="name">Monto:</label>
+                        <input runat="server" type="text" class="form-control"style="width:350px;" id="montoPago" MaxLength="20"/>
+                      </div>                    
+                             <div class="form-group">
+                        <label  class="text-black" for="">Adeudo:</label>
+                        <input runat="server" type="tel" class="form-control"style="width:350px;" id="adeudoPago" MaxLength="15" placeholder=" "/>
+                      </div>
+                      <div class="form-group">
+                        <label class="text-black" for="Fecha">Fecha:</label>
+                        <input runat="server" type="text" class="form-control"style="width:350px;" id="fechaPago" MaxLength="50" />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-black" for="">Hora:</label>
+                        <input runat="server" type="email" class="form-control"style="width:350px;" id="horaPago" MaxLength="50" />
+                      </div>
+                    
+                      <button id="btnGuardarPrestamos" class="btn btn-group-lg btn-danger">Guardar</button>
+        </form>
+        
+        <div class=" ">
+            <a class="dropdown-item" href="http://www.facebook.com">
+                <img src="img/f.png" width="60" height="60" class="d-inline-block align-top" alt=""> Facebook </a>
+            <a class="dropdown-item " href="#">
+                <img src="img/t.png" width="60" height="60" class="d-inline-block align-top" alt="">Twitter</a>
+            <a class="dropdown-item" href="#">
+                <img src="img/tf.png" width="60" height="60" class="d-inline-block align-top" alt="">4223047895</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="app.js"></script> 
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="boostrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="boostrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="boostrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="boostrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="boostrap/css/bootstrap.css">
+  <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <title>Iniciar Sesion</title>
+  <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBe2aIylFKYP7Y0yTcvRmCCe8IPwYLN-DU",
+    authDomain: "prestacasa-6896b.firebaseapp.com",
+    databaseURL: "https://prestacasa-6896b.firebaseio.com",
+    projectId: "prestacasa-6896b",
+    storageBucket: "prestacasa-6896b.appspot.com",
+    messagingSenderId: "137327123342"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+</head>
+
+<body  style="background-image: url('imagenes/ima2.jpg')"   >
+  <!-- Iniciar Sesion -->
+  <center>
+
+    <div id="divLogin" class=" espacioDIV col-lg-5  ">
+      <div id="root" class="jumbotron container " style="opacity: 0.8;">
+
+            <a   id= "login-form-link"  class="btn btn-lg btn-primary  " type="button" href="#">Entrar</a>
+            <a  id="register-form-link"class="btn btn-lg btn-primary " type="button" href="#">Registrarse</a>
+
+          <h3 class="display-6"> </h3>
+        <h2 class="display-6">Login Admin</h2>
+        <img src="./img/login.png" width="200px" height="190px"  alt="">
+        <br />
+        <br>
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+
+
+  <form  id ="login-form" class="" action="index.html"  style="display:block" role="form"method="post">
+<div class="form-group">
+  <input type="email" name="email" id="email" tabindex="1" style="width:350px; text-align:center" class="form-control" placeholder="Correo Electronico">
+  <!-- <input type="email" id="email" name="" style="width:350px; text-align:center" class="form-control" placeholder="ejemplo: equipo@itsh.com"> -->
+  <br>
+  <!-- <input type="password" id="password" style="width:350px ; text-align:center" class="form-control" placeholder="password"> -->
+  <input type="password" name="password" id="password" tabindex="2" style="width:350px; text-align:center"class="form-control" placeholder="Contraseña">
+
+<br>
+<a href="indexAdmin.html"> <input type="button" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success"  style="width:150px; text-align:center"value="Acceder" onclick="login()"></a>
+  <!-- <a type="button" href="index.html">Acceder</a> -->
+  <br>
+
+</div>
+    </form>
+
+    <form id ="register-form" class="" style="display: none" role="form" method="post">
+
+      <div class="form-group">
+        <input type="email" name="email" id="email-new" tabindex="1" style="width:350px; text-align:center"class="form-control" placeholder="Correo Electronico " value="">
+        <!-- <input type="email" id="email-new" style="width:350px; text-align:center" class="form-control" placeholder="ejemplo: equipo@itsh.com"> -->
+        <br>
+        <!-- <input type="password" id="password-new" style="width:350px ; text-align:center" class="form-control" placeholder="password"> -->
+        <input type="password" name="password" id="password-new" tabindex="2"style="width:350px; text-align:center" class="form-control" placeholder="Contraseña">
+      <br>
+        <!-- <a type="button" href="#">Registrar</a> -->
+        <input type="button"  name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-info" style="width:150px; text-align:center"value="Registrar" onclick="createUser()">
+
+        <br>
+
+      </div>
+    </form>
+</div>
+</div>
+    </div>
+
+
+
+
+
+
+
+        <br>
+        <h5 class="display-6">Entrar con Redes Sociales </h5>
+        <br>
+        <button id="facebook" class="btn btn-default btn-circle" type="button">  <img src="img/facebook.png" height="50px"width="50px"></button>
+    <button id="plus" class="btn btn-default btn-circle" type="button"> <img src="img/plus.png" height="48px"width="50px"></button>
+      </div>
+    </div>
+  </center>
+</body>
+
+<script src="app.js"></script>
+</html>

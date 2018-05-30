@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <script src="boostrap/js/bootstrap.js"></script>
+    <script src="boostrap/js/jquery.min.js">  </script>
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script src="boostrap/js/pooper.min.js"></script>
+    <script src="boostrap/js/tether.min.js"></script>
+    <link href="boostrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- <style>
+            .slider{
+              background: url("img/p4.jpg");
+              background-size: cover;
+              background-position: center6
+              height: 400px;
+            }
+          </style> -->
+    <title>:.PrestaCasa.:</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBe2aIylFKYP7Y0yTcvRmCCe8IPwYLN-DU",
+        authDomain: "prestacasa-6896b.firebaseapp.com",
+        databaseURL: "https://prestacasa-6896b.firebaseio.com",
+        projectId: "prestacasa-6896b",
+        storageBucket: "prestacasa-6896b.appspot.com",
+        messagingSenderId: "137327123342"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body style="background-color: cornflowerblue;" >
+
+   
+    <div class="container-fluid bg-inverse  fixed-top">
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="img/notes.png" width="60" height="60" class="d-inline-block align-top" alt=""> PrestaCasa
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto text-center">
+                    <a class="nav-item nav-link mr-md-4  active" href="Principal.html">Inicio</a>
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nosotros</button>
+                        <div class="dropdown-menu btn-info" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Misión </a>
+                            <a class="dropdown-item" href="#">Visión</a>
+                            <a class="dropdown-item" href="#">Valores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+   <br>
+   <br>
+<br>
+<br>
+    <div class="container-fluid slider text-black d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="text-black">CONSULTAS DE PRESTAMOS</h1>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="row prestamos-section">
+        <table id="prestamosTable" class="table table-hover table-bordered table-striped">
+            <thead>
+                <tr class="info">
+                    <th class="text-center">IdPrestamo</th>
+                    <th class="text-center">IdCliente</th>
+                    <th class="text-center">IdEmpleado</th>
+                    <th class="text-center">Monto</th>
+                    <th class="text-center">Plazo</th>
+                    <th class="text-center">Intereses</th>
+                    <th class="text-center">Fecha</th>
+                    <th class="text-center">Hora</th>
+                    <th class="text-center" colspan="2"></th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="app.js"></script> 
+</html>
