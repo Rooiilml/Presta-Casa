@@ -11,7 +11,17 @@
     <script src="boostrap/js/pooper.min.js"></script>
     <script src="boostrap/js/tether.min.js"></script>
     <link href="boostrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+    <!-- Letras cursivas -->
+    <style>/**/
+            @import url(
+                'https://fonts.googleapis.com/css?family=Bangers|Bree+Serif|Chewy|Cookie|Lobster+Two|Oleo+Script|Open+Sans|Pacifico'
+                );
+        </style>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- <style>
             .slider{
               background: url("img/p4.jpg");
@@ -37,7 +47,7 @@
     </script>
 </head>
 
-<body style="background-color: cornflowerblue;" >
+<body style="background-color: rgb(194, 195, 197)e;" >
 
     <!-- <div class="container-fuid bg-inverse fixed-top">
     <nav class="navbar navbar-toggler-sm navbar-inverse bg-inverse container">
@@ -55,118 +65,173 @@
       </div>
     </nav>
   </div>-->
-    <div class="container-fluid bg-inverse  fixed-top">
-        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown>
+
+        <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
+    
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand">
-                <img src="img/notes.png" width="60" height="60" class="d-inline-block align-top" alt=""> PrestaCasa
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav ml-auto text-center">
-                    <a class="nav-item nav-link mr-md-4  active" href="Principal.html">Inicio</a>
-                    <div class="dropdown">
-                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Nosotros</button>
-                        <div class="dropdown-menu btn-info" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Misión </a>
-                            <a class="dropdown-item" href="#">Visión</a>
-                            <a class="dropdown-item" href="#">Valores</a>
-                        </div>
+    
+          <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01" >
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch;color:black" href="#">Inicio</a>
+    
+    
+                <div class="nav-item dropdown" style="float: left;">
+                    <a style="color:black;   font-size: 2.5ch" class="nav-link dropdown-toggle mr-md-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Nosotros
+                    </a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Mision</a>
+                      <a class="dropdown-item" href="#">Vision</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Valores</a>
+    
                     </div>
-                </div>
+                  </div>
+    
+    
+    
             </div>
-        </nav>
-    </div>
-   <br>
-   <br>
-<br>
-<br>
-    <div class="container-fluid slider text-black d-flex flex-column justify-content-center align-items-center">
-        <div class="text-center">
-            <h1 class="text-black">REGISTRO DE EMPLEADOS</h1>
+    
         </div>
-    </div>
-    <hr>
-    <br>
-     <!--todo lo de los botones y caroucel-->
- 
-     <div class="text align-content-center text align-items-center ">
-        <div class="row">
-        <div class="col-sm-2 align-content-center">
-            <div class=" btn-group-vertical btn-group-lg">
-                <a type="button" class="btn btn-success  " href="clientesAdmin.html">Clientes</a>
+    
+    
+    
+    </nav> <br> <br> <br> <br> <br>
+     <!-- Sección Slider -->
+ <div class="container-fluid slider  text-white  d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center" >
+         <div class="col-md-12">
+             <div class="  btn-toolbar btn-group-lg justify-content-center ">
+                  
+                <a type="button"class="btn btn-danger  mr-md-4" href="clientesAdmin.html">Clientes</a>
                 <br>
-                <a type="button" class="btn btn-success " href="PrestamosAdmin.html">Prestamos</a>
+                <a type="button" class="btn btn-danger  mr-md-4" href="PrestamosAdmin.html">Prestamos</a>
                 <br>
-                <a type="button" class="btn btn-success " href="EmpleadosAdmin.html">Empleados</a>
+                <a type="button" class="btn btn-danger  mr-md-4" href="EmpleadosAdmin.html">Empleados</a>
                 <br>
-                <a type="button" class="btn btn-success " href="PagosYCobrosAdmin.html">Pagos/Cobros</a>
-                <br>
-                <a type="button" class="btn btn-success " href="">Bitacora de Pagos Clientes</a>
-                <br>
-                <a type="button" class="btn btn-success " href="">Bitacora de Cobros del Promotor</a>
-                <br>
-                <a type="button" class="btn btn-success " href="">Bitacora de Prestamos Acomodados</a>
-                <br>
-                <a type="button" class="btn btn-success " href="">Bitacora de Movimientos Realizados</a>
+                <a type="button" class="btn btn-danger  mr-md-4" href="PagosYCobrosAdmin.html">Pagos/Cobros</a>
+                
+              </div>
+         </div>
+         <br>
+         <div class="col-md-12">
+                <div class="  btn-toolbar btn-group-lg justify-content-center ">
+                     
+                   
+              
+                   <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Pagos Clientes</a>
+                   <br>
+                   <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Cobros del Promotor</a>
+                   <br>
+                   <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Prestamos Acomodados</a>
+                   <br>
+                   <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Movimientos Realizados</a>
+                 </div>
             </div>
         </div>
         
-        <form class="form-horizontal" style="margin:0 auto">
+      </div>
+ <!-- Termina Sección Slider -->
+
+    
+ 
+     <div class="container ">
+            <hr class="badge-danger" style="height: 8px">
+            
+      
+            
+              <div class="row justify-content-center">
+                    <h1>Registro de Empleados</h1>
+                <!-- Sección de noticias -->
+                <div class="col-12 col-lg-9 mb-5">
+                  <!-- Artículos -->
+                  <div class="row mb-5">
+                    <div class="col-3">
+                      <img class="img-fluid" src="images/p6.jpg" height="500" width="500" alt="">
+                      <p class="lead text-muted text-center">.</p>
+                    </div>
+        
+        
+        <form class="col-md-9 ">
                 <div class="form-group ">
                         <label class="text-black" for="name">IdEmpleado:</label>
-                        <input runat="server" type="number" class="form-control"  style="width:350px;" id="IdEmpleado" MaxLength="30" />
+                        <input runat="server" type="number" class="form-control"    id="IdEmpleado" MaxLength="30" />
                       </div>
                     
                          <div class="form-group">
                         <label class="text-black" for="name">Tipo:</label>
-                        <input runat="server" type="text" class="form-control" style="width:350px;" id="TipoEmp" MaxLength="20"/>
+                        <input runat="server" type="text" class="form-control"   id="TipoEmp" MaxLength="20"/>
                       </div>                             
                                 <div class="form-group">
                         <label class="text-black" for="name">Nombre:</label>
-                        <input runat="server" type="text" class="form-control" style="width:350px;" id="NombreEmp" MaxLength="20"/>
+                        <input runat="server" type="text" class="form-control"   id="NombreEmp" MaxLength="20"/>
                       </div>
                                 <div class="form-group " item-width="500">
                         <label class="text-black" for="name">Primer Apellido:</label>
-                        <input runat="server" type="text" class="form-control" style="width:350px;" id="apaternoEmp" MaxLength="20" />
+                        <input runat="server" type="text" class="form-control"   id="apaternoEmp" MaxLength="20" />
                       </div>
                                 <div class="form-group">
                         <label class="text-black" for="name">Segundo Apellido:</label>
-                        <input runat="server" type="text" class="form-control" style="width:350px;" id="amaternoEmp" MaxLength="20"/>
+                        <input runat="server" type="text" class="form-control"   id="amaternoEmp" MaxLength="20"/>
                       </div>                    
                              <div class="form-group">
                         <label  class="text-black" for="">Telefono:</label>
-                        <input runat="server" type="tel" class="form-control" style="width:350px;" id="telefonoEmp" MaxLength="15" placeholder=" "/>
+                        <input runat="server" type="tel" class="form-control"   id="telefonoEmp" MaxLength="15" placeholder=" "/>
                       </div>
                       <div class="form-group">
                         <label class="text-black" for="Fecha">Domicilio:</label>
-                        <input runat="server" type="text" class="form-control" style="width:350px;" id="domicilioEmp" MaxLength="50" />
+                        <input runat="server" type="text" class="form-control"   id="domicilioEmp" MaxLength="50" />
                       </div>
                       <div class="form-group">
                         <label class="text-black" for="">Correo Electronico:</label>
-                        <input runat="server" type="email" class="form-control" style="width:350px;" id="emailEmp" MaxLength="50" />
+                        <input runat="server" type="email" class="form-control"   id="emailEmp" MaxLength="50" />
                       </div>
                       <div class="form-group">
                             <label class="text-black" for="pwd">N° de Cuenta:</label>
-                            <input runat="server" type="number" class="form-control" style="width:350px;" id="cuentaEmp" MaxLength="50" />
+                            <input runat="server" type="number" class="form-control"   id="cuentaEmp" MaxLength="50" />
                           </div>
-                      <button id="btnGuardarPrestamos" class="btn btn-group-lg btn-danger">Guardar</button>
+                      <button id="btnGuardarPrestamos" class="btn btn-group-lg btn-success  mr-md-4">Guardar</button>
+                      <button class="btn btn-group-lg btn-warning   mr-md-4  ">Modificar</button>
+       
+                             <button class="btn btn-group-lg btn-danger   mr-md-4 ">Eliminar</button>
         </form>
+    </div>
+</div>   
         
-        <div class=" ">
-            <a class="dropdown-item" href="http://www.facebook.com">
-                <img src="img/f.png" width="60" height="60" class="d-inline-block align-top" alt=""> Facebook </a>
-            <a class="dropdown-item " href="#">
-                <img src="img/t.png" width="60" height="60" class="d-inline-block align-top" alt="">Twitter</a>
-            <a class="dropdown-item" href="#">
-                <img src="img/tf.png" width="60" height="60" class="d-inline-block align-top" alt="">4223047895</a>
-        </div>
     </div>
 </div>
+<!-- Footer -->
+<br>
+<div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-4">
+                    <h4 class="wow fadeInUp">Nuestro Contacto</h4>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> Domicilio de la empresa</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@PrestaCasa.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> telefono de la empresa</p>
+                    <p><i class="fa fa-globe" aria-hidden="true"></i> pagina de la empresa</p>
+                </div>
+                <div class="col-lg-6 col-md-4">
+                    <h4>Aprende Más</h4>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Nosotros</p>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacidad</p>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Terminos & Condiciones</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+      <!-- Fin Footer -->
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 </body>
 <script src="app.js"></script> 
 </html>
