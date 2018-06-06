@@ -48,7 +48,11 @@
 
 </head>
 
+<<<<<<< HEAD
 <body >
+=======
+<body style="background-color: rgb(194, 195, 197)e;" >
+>>>>>>> da925903a3164a213754614d971c2066d2fff918
 
     <!-- <div class="container-fuid bg-inverse fixed-top">
     <nav class="navbar navbar-toggler-sm navbar-inverse bg-inverse container">
@@ -66,6 +70,7 @@
       </div>
     </nav>
   </div>-->
+<<<<<<< HEAD
   <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown>
 
     <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
@@ -128,24 +133,89 @@
             <h1 class="text-black">REGISTRO DE PRESTAMOS</h1>
         </div>
     </div>
+=======
+           <!-- Sección Slider -->
+           <br><br><br>
+           <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown>
+
+            <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
+      
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      
+              <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01" >
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch;color:black" href="#">Inicio</a>
+      
+      
+                    <div class="nav-item dropdown" style="float: left;">
+                        <a style="color:black; font-size: 2.5ch" class="nav-link dropdown-toggle mr-md-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Nosotros
+                        </a>
+                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Mision</a>
+                          <a class="dropdown-item" href="#">Vision</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Valores</a>
+      
+                        </div>
+                      </div>
+      
+      
+      
+                </div>
+      
+            </div>
+      
+      
+      
+        </nav>
+           
+           <br><br><br>
+           <div class="container-fluid slider  text-white  d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center">
+             <div class="col-md-13">
+                 <div class="  btn-toolbar btn-group-lg  ">
+                      <a type="button" class="btn btn-danger  mr-md-4 " href="clientes.html">Clientes</a>
+                      <br>
+      
+                      <a type="button" class="btn btn-danger mr-md-4 " href="Prestamos.html">Prestamos</a>
+      
+                      <br>
+                      <a type="button" class="btn btn-danger  mr-md-4" href="PagosYCobros.html">Pagos/Cobros</a>
+                  </div>
+             </div>
+            </div>
+            <form action="" class="form-inline flex-column flex-sm-row">
+      
+      
+            </form>
+          </div>
+ 
+
+
+>>>>>>> da925903a3164a213754614d971c2066d2fff918
     <hr>
-    <br>
+    
      <!--todo lo de los botones y caroucel-->
  
-     <div class="text align-content-center text align-items-center ">
-        <div class="row">
-        <div class="col-sm-2 align-content-center">
-            <div class="  btn-group-vertical btn-group-lg">
-                <a type="button" class="btn btn-success  " href="clientes.html">Clientes</a>
-                <br>
-                <a type="button" class="btn btn-success " href="Prestamos.html">Prestamos</a>
-                <br>
-                <a type="button" class="btn btn-success " href="Empleados.html">Empleados</a>
-                <br>
-                <a type="button" class="btn btn-success " href="PagosYCobros.html">Pagos/Cobros</a>
-            </div>
-        </div>
+     
         
+    <div class="container">
+        <hr class="badge-danger" style="height: 8px">
+  
+        <h1>Clientes</h1>
+          <div class="row">
+            <!-- Sección de noticias -->
+            <div class="col-12 col-lg-9 mb-5">
+              <!-- Artículos -->
+              <div class="row mb-5">
+                <div class="col-3">
+                  <img class="img-fluid" src="images/p6.jpg" height="500" width="500" alt="">
+                  <p class="lead text-muted text-center">.</p>
+                </div>
+   
         <div class="col-sm-8">
                 <div class="form-group ">
                         <label class="text-black" for="name">IdPrestamos:</label>
@@ -180,13 +250,37 @@
                         <label class="text-black" for="pwd">Hora:</label>
                         <input runat="server" type="time" class="form-control" id="Hora" MaxLength="15" />
                       </div>
-                      <button id="btnGuardarPrestamos" class="btn btn-group-lg btn-danger">Guardar</button>
+                      <button id="btnGuardarPrestamos" class="btn btn-group-lg btn-success">Guardar</button>
+                      
+                      <button class="btn btn-group-lg btn-warning   mr-md-4  ">Modificar</button>
+       
+                      <button class="btn btn-group-lg btn-primary   mr-md-4  ">Consultar</button>
+                      <button class="btn btn-group-lg btn-danger   mr-md-4 ">Eliminar</button>
          </div>
+         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header alert-danger">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">Error</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        ¡¡¡Ya existe un Cliente con el mismo Id.!!!
+                    </div>
         
+                </div>
         
+            </div>
         
+<<<<<<< HEAD
+        
+=======
+        </div>
+        </div>
+>>>>>>> da925903a3164a213754614d971c2066d2fff918
     </div>
 </div>
 </body>
 <script src="app.js"></script> 
-</html>
+</html> 
+<!-->
