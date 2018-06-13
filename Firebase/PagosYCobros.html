@@ -53,16 +53,16 @@
         <nav class="fixed-top navbar navbar-expand-md navbar-light "style="background-color: #e3f2fd; " fadeInDown>
 
                 <a style="color:black; font-size: 4ch" class="logo navbar-brand " id="welcome" href="#">Presta Casa</a>
-          
+
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-          
+
                   <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01" >
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link mr-md-3" style="font-size: 2.5ch;color:black" href="#">Inicio</a>
-          
-          
+
+
                         <div class="nav-item dropdown" style="float: left;">
                             <a style="color:black; font-size: 2.5ch" class="nav-link dropdown-toggle mr-md-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Nosotros
@@ -72,20 +72,20 @@
                               <a class="dropdown-item" href="#">Vision</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#">Valores</a>
-          
+
                             </div>
                           </div>
-          
-          
-          
+
+
+
                     </div>
-          
+
                 </div>
-          
-          
-          
+
+
+
             </nav> <br> <br> <br> <br> <br>
-  
+
     <!-- Sección Slider -->
     <div class="container-fluid slider  text-white  d-flex flex-column justify-content-center align-items-center">
             <div class="text-center">
@@ -93,22 +93,22 @@
                  <div class="  btn-toolbar btn-group-lg  ">
                       <a type="button" class="btn btn-danger  mr-md-4 " href="clientes.html">Clientes</a>
                       <br>
-      
-                      <a type="button" class="btn btn-danger mr-md-4 " href="Prestamos.html">Prestamos</a>
-      
+
+                      <a type="button" class="btn btn-danger mr-md-4 " href="Pretamos.html">Prestamos</a>
+
                       <br>
                       <a type="button" class="btn btn-danger  mr-md-4" href="PagosYCobros.html">Pagos/Cobros</a>
                   </div>
              </div>
             </div>
             <form action="" class="form-inline flex-column flex-sm-row">
-      
-      
+
+
             </form>
           </div>
           <div class="container">
                 <hr class="badge-danger" style="height: 8px">
-          
+
                 <h1>Pagos y Cobros</h1>
                   <div class="row">
                     <!-- Sección de noticias -->
@@ -119,17 +119,17 @@
                           <img class="img-fluid" src="images/p6.jpg" height="500" width="500" alt="">
                           <p class="lead text-muted text-center">.</p>
                         </div>
-        
+
         <div class="col-sm-8">
                 <div class="form-group ">
                         <label class="text-black" for="name">IdPago:</label>
                         <input runat="server" type="number" class="form-control" id="IdPago" MaxLength="30" />
                       </div>
-                    
+
                          <div class="form-group">
                         <label class="text-black" for="name">IdCliente:</label>
                         <input runat="server" type="number" class="form-control" id="IdCliente" MaxLength="20"/>
-                      </div>                             
+                      </div>
                                 <div class="form-group">
                         <label class="text-black" for="name">IdPrestamo:</label>
                         <input runat="server" type="number" class="form-control" id="IdPrestamo" MaxLength="20"/>
@@ -140,11 +140,11 @@
                       </div>
                                 <div class="form-group">
                         <label class="text-black" for="name">Monto a Pagar:</label>
-                        <input runat="server" type="number" class="form-control" id="montoPago" MaxLength="20"/>
-                      </div>                    
+                        <input runat="server" type="number" class="form-control" id="montoPago" MaxLength="20" placeholder="$500"/>
+                      </div>
                              <div class="form-group">
                         <label  class="text-black" for="">Adeudo:</label>
-                        <input runat="server" type="number" class="form-control" id="adeudoPago" MaxLength="15" />
+                        <input runat="server" type="number" class="form-control" id="adeudoPago" MaxLength="15" placeholder="$500"/>
                       </div>
                       <div class="form-group">
                         <label class="text-black" for="Fecha">Fecha:</label>
@@ -154,7 +154,7 @@
                         <label class="text-black" for="">Hora:</label>
                         <input runat="server" type="time" class="form-control" id="horaPago" MaxLength="10" />
                       </div>
-                    
+
                       <button id="btnGuardarPagos" class="btn btn-group-lg btn-danger">Guardar</button>
          </div>
         </div>
@@ -178,7 +178,7 @@
                     <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacidad</p>
                     <p><i class="fa fa-square-o" aria-hidden="true"></i> Terminos & Condiciones</p>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -192,5 +192,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
-<script src="app.js"></script> 
+<script src="app.js"></script>
 </html>
