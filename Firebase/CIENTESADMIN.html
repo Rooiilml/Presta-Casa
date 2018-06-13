@@ -13,6 +13,7 @@
     <link href="boostrap/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/Style1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <!-- Letras cursivas -->
     <style>/**/
             @import url(
@@ -47,6 +48,7 @@
 </head>
 
 <body style="background-color: rgb(194, 195, 197)e;" >
+
     <!-- <div class="container-fuid bg-inverse fixed-top">
     <nav class="navbar navbar-toggler-sm navbar-inverse bg-inverse container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -98,7 +100,7 @@
     
     
     </nav> <br> <br> <br> <br> <br>
-   <!-- Sección Slider -->
+     <!-- Sección Slider -->
  <div class="container-fluid slider  text-white  d-flex flex-column justify-content-center align-items-center">
         <div class="text-center" >
          <div class="col-md-12">
@@ -111,7 +113,8 @@
                 <a type="button" class="btn btn-danger  mr-md-4" href="EmpleadosAdmin.html">Empleados</a>
                 <br>
                 <a type="button" class="btn btn-danger  mr-md-4" href="PagosYCobrosAdmin.html">Pagos/Cobros</a>
-                              <!--jumbotron -->
+              
+                <!--jumbotron -->
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Bitacoras</button>
     <div class="dropdown-menu">
@@ -126,10 +129,8 @@
               </div>
          </div>
          <br>
-       <!---<div class="col-md-12">
-                <div class="  btn-toolbar btn-group-lg justify-content-center ">
-                     
-                   
+       <!---  <div class="col-md-12">
+                <div class="  btn-toolbar btn-group-lg  ">
               
                    <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Pagos Clientes</a>
                    <br>
@@ -137,19 +138,19 @@
                    <br>
                    <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Prestamos Acomodados</a>
                    <br>
+                  
                    <a type="button" class="btn btn-danger  mr-md-4" href="">Bitacora de Movimientos Realizados</a>
                  </div>
             </div>-->
         </div>
         
       </div>
-      <div class="container  ">
+ <!-- Termina Sección Slider -->
+
+     <div class="container ">
             <hr class="badge-danger" style="height: 8px">
-            
-      
-            
               <div class="row justify-content-center">
-                    <h1>Registro de Prestamos</h1>
+                    <h1>Registro de Empleados</h1>
                 <!-- Sección de noticias -->
                 <div class="col-12 col-lg-9 mb-5">
                   <!-- Artículos -->
@@ -162,46 +163,41 @@
         
         <form class="col-md-9 ">
                 <div class="form-group ">
-                        <label class="text-black" for="name">IdPrestamos:</label>
-                        <input runat="server" type="number" class="form-control"  id="IdPrestamos" MaxLength="30" />
+                    <div class="form-group ">
+                        <label class="text-black" for="name">IdClientes:</label>
+                        <input runat="server" type="number" class="form-control"    id="IdEmpleado" MaxLength="30" />
                       </div>
-                    
-                         <div class="form-group">
-                        <label class="text-black" for="name">IdCliente:</label>
-                        <input runat="server" type="text" class="form-control"  id="IdCliente" MaxLength="50"/>
-                      </div>                             
-                                <div class="form-group">
-                        <label class="text-black" for="name">IdEmpleado:</label>
-                        <input runat="server" type="text" class="form-control"  id="IdEmpleado" MaxLength="10"/>
-                      </div>
-                                <div class="form-group " item-width="500">
-                        <label class="text-black" for="name">Monto:</label>
-                        <input runat="server" type="number" class="form-control"  id="Monto" MaxLength="20" />
-                      </div>
-                                <div class="form-group">
-                        <label class="text-black" for="name">Plazo:</label>
-                        <input runat="server" type="text" class="form-control"  id="Plazo" MaxLength="50"/>
-                      </div>                    
-                             <div class="form-group">
-                        <label  class="text-black"for="email">Intereses:</label>
-                        <input runat="server" type="email" class="form-control"  id="Intereses" MaxLength="50" placeholder="Ejempo: 3% "/>
-                      </div>
+
+                 <div class="form-group">
+                        <label class="text-black" for="name">Nombre:</label>
+                        <input runat="server" type="text" class="form-control"  id="Nombre" MaxLength="50"/>
+                      </div>      
                       <div class="form-group">
-                        <label class="text-black" for="Fecha">Fecha:</label>
-                        <input runat="server" type="date" class="form-control"  id="Fecha" MaxLength="15" />
-                      </div>
+                          <label class="text-black" for="name">Primer Apellido:</label>
+                          <input runat="server" type="text" class="form-control" id="Primer_Apellido" MaxLength="10"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-black" for="name">Domicilio:</label>
+                                             <input runat="server" type="text" class="form-control"  id="Domicilio" MaxLength="50"/>
+                          </div>
+                          <div class="form-group">
+                              <label  class="text-black"for="email">Email:</label>
+                              <input runat="server" type="email" class="form-control"  id="Email" MaxLength="50"/>
+                            </div>
+                            
                       <div class="form-group">
-                        <label class="text-black" for="pwd">Hora:</label>
-                        <input runat="server" type="time" class="form-control"  id="Hora" MaxLength="15" />
-                      </div>
+                          <label class="text-black" for="pwd">Telefono:</label>
+                          <input runat="server" type="tel" class="form-control"  id="Telefono" MaxLength="15" placeholder="Maximo 15 digitos"/>
+                        </div>
+                      
                       <button id="btnGuardarPrestamos" class="btn btn-group-lg btn-success  mr-md-4">Guardar</button>
                       <button class="btn btn-group-lg btn-warning   mr-md-4  ">Modificar</button>
-       
-                             <button class="btn btn-group-lg btn-danger   mr-md-4 ">Eliminar</button>
+                      <button class="btn btn-group-lg btn-primary   mr-md-4  "> Consultar </button>
+                      <button class="btn btn-group-lg btn-danger   mr-md-4 ">Eliminar</button>
         </form>
-        
     </div>
-</div>
+</div>   
+        
     </div>
 </div>
 <!-- Footer -->
@@ -227,6 +223,8 @@
         </div>
     </div>
       <!-- Fin Footer -->
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
