@@ -261,6 +261,22 @@ $("#btnGuardarCliente").click(guardarCliente);
  console.log("The read failed" + errorObject.code);
 })
 
+//Metodo Para Consultar el Id del prestamo
+db3.on('value',function(snapshot){
+
+    var prestamo = snapshot.val();
+    $('contenedor datalist').empty();
+    var datalist ="";
+
+    for (prestamo in prestamos){
+       datalist= '<option value="'+prestamos[prestamo].IdPrestamos+'">'
+    }
+
+},function(errorObject){
+    console.log("The read failed" + errorObject.code);
+})
+
+
 
  //Método para guardar Prestamos//
  /******************************/
